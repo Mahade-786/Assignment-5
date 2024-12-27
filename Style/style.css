@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+
+.lexend-font {
+    font-family: "Lexend", sans-serif;
+  }
+
+  .default-width{
+    width: calc(100% - 10.4%);
+}
+
+  .middle-all{
+    margin: 0 auto;
+}
