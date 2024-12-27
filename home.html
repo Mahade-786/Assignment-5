@@ -5,41 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Page</title>
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Daisi Ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
       rel="stylesheet"
-      type="text/css"/>
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Css File -->
-     <link rel="stylesheet" href="Style/style.css">
-
+    <link rel="stylesheet" href="Style/style.css" />
   </head>
-  <body>
-    <header class="border-2 pt-7 pb-7 bg-[#f2ebde] bg-opacity-75">
-      <div class="navbar">
-        <div class="navbar-start">
-          <button class="btn bg-yellow-400 w-24 font-bold text-lg">Blog</button>
+  <body class="lexend-font">
+    <header class="sticky top-1 mb-10">
+      <!-- Navber start -->
+      <section class="backdrop-blur-lg">
+        <div class="bg-[#eee8dc] bg-opacity-75 pb-4">
+          <div
+            class="flex flex-col items-center lg:flex-row lg:items-center lg:justify-between flex-wrap bg-transparent py-6 default-width mx-auto"
+          >
+            <div class="order-3 md:order-1">
+              <button
+                onclick="homeToBlog()"
+                class="btn bg-lime-300 hover:bg-lime-100 px-6 text-xl font-bold border-none lg:my-5"
+              >
+                Blog
+              </button>
+            </div>
+            <div
+              class="flex justify-center items-center space-x-4 order-1 md:order-2"
+            >
+              <img src="assets/logo.png" alt="logo" />
+              <p class="text-xl font-bold text-[#111111] text-nowrap">
+                Donate Bangladesh
+              </p>
+            </div>
+            <div
+              class="flex justify-center items-center space-x-4 order-2 my-5 lg:my-0"
+            >
+              <img src="assets/coin.png" alt="coin" />
+              <p class="text-xl text-[#111111B3] font-medium">
+                <span id="my-Balance">55000</span> BDT
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="navbar-center gap-3">
-          <img src="assets/logo.png" alt="" />
-          <h2 class="font-bold text-xl">Donate Bangladesh</h2>
-        </div>
-        <!-- Account Balance -->
-        <div class="navbar-end gap-2 pr-2">
-          <img src="assets/coin.png" alt="" />
-          <h2 class="text-2xl">2000</h2>
-        </div>
+      </section>
+      <!-- Navber end -->
+      <!-- Donation & History Button Section -->
+      <div class="flex justify-center gap-8">
+        <button
+          class="btn bg-lime-300 hover:bg-lime-100 px-6 text-xl font-semibold shadow-none mt-16"
+        >
+          Donation
+        </button>
+
+        <button
+          class="btn bg-white hover:bg-lime-200 px-6 text-xl font-semibold shadow-none mt-16"
+        >
+          History
+        </button>
       </div>
     </header>
-    <!-- Donation & History Button Section -->
-    <section class="container">
 
-    </section>
+    <main class="">
+      <section>
+        <div class="default-width mx-auto space-y-4">
+             <!-- Card -1 -->
+
+          <div class="border border-gray-200 rounded-2xl p-8">          
+            <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 flex-wrap gap-5 mx-16">
+              <div>
+                <img src="assets/noakhali.png" alt="Noakhali" />
+              </div>
+              <div class="space-y-4">
+                <button
+                  class="flex gap-3 p-2 bg-[#1111110D] px-4 rounded-lg cursor-default"
+                >
+                  <img src="assets/coin.png" alt="Coin" />
+                  <p class="text-xl text-[#111111B3] font-medium">
+                    <span>0</span> BDT
+                  </p>
+                </button>
+                <h3 class="text-xl font-bold">
+                  Donate for Flood at Noakhali, Bangladesh
+                </h3>
+                <p class="font-light">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+                <div class="form-control">
+                    <input type="text" placeholder="write donstion amount" class="input input-bordered" autocomplete="off" required  />
+                  </div>
+                <div class="form-control mt-6">
+                    <button class="btn bg-[#B4F461] hover:bg-[#B4F461]">Donate Now</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Script Js connect -->
   </body>
 </html>

@@ -2,14 +2,32 @@
     margin: 0;
 }
 
-.lexend-font {
+.lexend-font{
     font-family: "Lexend", sans-serif;
   }
 
-  .default-width{
+.default-width{
     width: calc(100% - 10.4%);
 }
 
-  .middle-all{
+.middle-all{
     margin: 0 auto;
 }
+
+
+/*
+<div class="navbar">
+        <div class="navbar-start">
+          <button class="btn bg-lime-300 hover:bg-lime-200 px-6 text-xl font-semibold border-none lg:my-5">Blog</button>
+        </div>
+        <div class="navbar-center gap-3">
+          <img src="assets/logo.png" alt="logo" />
+          <h2 class="font-bold text-xl">Donate Bangladesh</h2>
+        </div>
+        <!-- Account Balance -->
+        <div class="navbar-end gap-2 pr-2">
+          <img src="assets/coin.png" alt="" />
+          <h2 class="text-2xl">2000</h2>
+        </div>
+      </div> 
+ */
