@@ -1,9 +1,11 @@
 function getInputValueById(id){
     const amount = document.getElementById(id).value;
-    return amount;
+    const value = parseFloat(amount);
+    return value;
 }
 
 function getInputInnerTextById(id){
     const amount = document.getElementById(id).innerText;
-    return amount;
+    const balance = parseFloat(amount);
+    return balance;
 }

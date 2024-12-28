@@ -62,13 +62,13 @@
       <!-- Navber end -->
       <!-- Donation & History Button Section -->
       <div class="flex justify-center gap-8">
-        <button
+        <button id="donation-btn"
           class="btn bg-lime-300 hover:bg-lime-100 px-6 text-xl font-semibold shadow-none mt-16"
         >
           Donation
         </button>
 
-        <button
+        <button id="donation-history"
           class="btn bg-white hover:bg-lime-300 px-6 text-xl font-semibold shadow-none mt-16"
         >
           History
@@ -95,7 +95,7 @@
                   <img src="assets/coin.png" alt="Coin" />
 
                   <!-- Donate Balance -->
-                  <p class="text-xl text-[#111111B3] font-medium">
+                  <p id="noakhali-total-amount" class="text-xl text-[#111111B3] font-medium">
                     <span>0</span> BDT
                   </p>
                 </button>
@@ -111,7 +111,7 @@
                   impact on the lives of those in need.
                 </p>
                 <div class="form-control">
-                  <input
+                  <input id="noakhali-input-amount"
                     type="text"
                     placeholder="write donstion amount"
                     class="input input-bordered"
@@ -120,7 +120,7 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn bg-lime-200 hover:bg-[#B4F461]">
+                  <button id="noakhali-donate-btn" class="btn bg-lime-200 hover:bg-[#B4F461]">
                     Donate Now
                   </button>
                 </div>
@@ -144,8 +144,8 @@
                   <img src="assets/coin.png" alt="Coin" />
 
                   <!-- Donate Balance -->
-                  <p class="text-xl text-[#111111B3] font-medium">
-                    <span>500</span> BDT
+                  <p id="feni-total-amount" class="text-xl text-[#111111B3] font-medium">
+                    <span>0</span> BDT
                   </p>
                 </button>
                 <h3 class="text-xl font-bold">
@@ -162,7 +162,7 @@
                   today to assist those in urgent need.
                 </p>
                 <div class="form-control">
-                  <input
+                  <input id="feni-input-amount"
                     type="text"
                     placeholder="write donstion amount"
                     class="input input-bordered"
@@ -171,7 +171,7 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn bg-lime-200 hover:bg-[#B4F461]">
+                  <button id="feni-donate-btn" class="btn bg-lime-200 hover:bg-[#B4F461]">
                     Donate Now
                   </button>
                 </div>
@@ -194,8 +194,8 @@
                   <img src="assets/coin.png" alt="Coin" />
 
                   <!-- Donate Balance -->
-                  <p class="text-xl text-[#111111B3] font-medium">
-                    <span>5000</span> BDT
+                  <p id="quota-total-amount" class="text-xl text-[#111111B3] font-medium">
+                    <span>0</span> BDT
                   </p>
                 </button>
                 <h3 class="text-xl font-bold">
@@ -213,7 +213,7 @@
                   support these brave individuals in their time of need.
                 </p>
                 <div class="form-control">
-                  <input
+                  <input id="quota-input-amount"
                     type="text"
                     placeholder="write donstion amount"
                     class="input input-bordered"
@@ -222,7 +222,7 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn bg-lime-200 hover:bg-[#B4F461]">
+                  <button id="quota-donate-btn" class="btn bg-lime-200 hover:bg-[#B4F461]">
                     Donate Now
                   </button>
                 </div>
@@ -241,7 +241,7 @@
       <!-- Modal Section -->
       <!-- Open the modal using ID.showModal() method -->
       <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-      <dialog id="my_modal_1" class="modal">
+      <dialog id="modal" class="modal">
         <h1 class="text-3xl font-extrabold ">Congrats!</h1>
         <img class="py-4" src="assets/coin.png" alt="coin">
           <p class="py-4">You are king of heart person</p>
