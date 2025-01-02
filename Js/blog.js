@@ -1,3 +1,3 @@
-function blogToHome(){
-    window.location.assign('home.html');
+function blogToIndex(){
+    window.location.assign('index.html');
 }

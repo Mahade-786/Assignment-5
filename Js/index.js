@@ -1,5 +1,5 @@
 // Blog button
-function homeToBlog(){
+function indexToBlog(){
     window.location.assign('blog.html');
 }
 
